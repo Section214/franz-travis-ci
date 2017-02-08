@@ -1,0 +1,26 @@
+{
+  "name": "Travis CI",
+  "version": "1.0.0",
+  "description": "Unofficial Travis CI plugin for Trello",
+  "main": "index.js",
+  "author": "Daniel J Griffiths <dgriffiths@section214.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://travis-ci.org/{teamID}",
+    "serviceName": "Travis CI",
+    "message": "Enter the full URL to the Travis CI repository you wish to monitor. You can also enter 'https://travis-ci.org' to show all repos attached to your account.",
+    "popup": [],
+    "hasNotificationSound": false,
+    "hasIndirectMessages": false,
+    "hasTeamID": true,
+    "customURL": true,
+    "hostedOnly": true,
+	"wording": {
+        "team": "Travis CI"
+    },
+    "webviewOptions": {
+      "disablewebsecurity": ""
+    },
+    "openDevTools": false
+  }
+}

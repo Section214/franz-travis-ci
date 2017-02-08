@@ -1,0 +1,9 @@
+.topbar .broadcast {
+	display: none;
+}
+
+.navigation ul li:nth-child(1),
+.navigation ul li:nth-child(2),
+.navigation ul li:nth-child(3) {
+	display: none;
+}
