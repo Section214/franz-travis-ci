@@ -1,7 +1,7 @@
 {
   "name": "Travis CI",
   "version": "1.0.0",
-  "description": "Unofficial Travis CI plugin for Trello",
+  "description": "Unofficial Travis CI plugin for Franz",
   "main": "index.js",
   "author": "Daniel J Griffiths <dgriffiths@section214.com>",
   "license": "MIT",
