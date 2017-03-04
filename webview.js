@@ -1,10 +1,31 @@
+/**
+ * Travis CI integration plugin for Franz
+ *
+ * @summary     Integrates Travis CI into the Franz application
+ * @since       1.0.0
+ */
+
+
+/**
+ * Script constants
+ */
 const path = require('path');
 
+
+/**
+ * The core Franz message handler
+ *
+ * @since       1.0.0
+ */
 module.exports = (Franz, options) => {
 	Franz.injectCSS(path.join(__dirname, 'css', 'franz.css'));
 
-	$('.topbar:has(.profile.signed-in)').css('display', 'none');
-
+	/**
+	 * Get messages for the Franz loop
+	 *
+	 * @since       1.0.0
+	 * @return      {void}
+	 */
 	function getMessages() {
 		let unread = 0;
 		let finished = '';
@@ -30,7 +51,7 @@ module.exports = (Franz, options) => {
 						unread = status;
 					} else {
 						// This should never happen... only shown if build failed but count can't be found
-						unread = '&bull;'
+						unread = '&bull;';
 					}
 				}
 			}
@@ -40,4 +61,4 @@ module.exports = (Franz, options) => {
 	}
 
 	Franz.loop(getMessages);
-}
+};
